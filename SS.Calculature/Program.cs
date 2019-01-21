@@ -30,18 +30,41 @@ namespace SS.Calculature
                 switch (inputchoice)
                 {
                     case 1:
+                        p.Addition(a, b);
                         break;
                     case 2:
+                        p.Subtraction(a, b);
                         break;
                     case 3:
+                        p.Multiblcation(a, b);
                         break;
                     case 4:
+                        p.Division(a, b);
                         break;
-                    default:
-                        break;
+
                 }
 
             } while (inputchoice > 0 && inputchoice < 5);
+
+        } public void Addition(double a, double b)
+        {
+            double result = a + b;
+            Console.WriteLine("Addition : a + b =" + result);
+        }
+        public void Subtraction(double a, double b)
+        {
+            double result = a - b;
+            Console.WriteLine("Subtraction : a - b =" + result);
+        }
+        public void Multiblcation(double a, double b)
+        {
+            double result = a * b;
+            Console.WriteLine("Multiblcation : a * b =" + result);
+
+        } public void Division(double a, double b)
+        {
+            double result = a / b;
+            Console.WriteLine("Division : a / b =" + result);
         }//end of main
     }//end of class
 }//end of namespace
